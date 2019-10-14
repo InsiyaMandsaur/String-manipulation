@@ -1,0 +1,31 @@
+Module Module1
+
+    Sub Main()
+        Dim string1, string2, nextchar As String
+        Dim counter As Integer
+        
+        string1 = ""
+        string2 = ""
+        nextchar = ""
+        counter = 0
+
+        Console.Writeline("enter a string: ")
+        string1 = Console.ReadLine()
+
+        For counter = 1 To Len(string1)
+            nextchar = Mid(string1, counter, 1)
+            If nextchar <> " " Then
+                string2 = string2 & nextchar
+            Else
+                Console.WriteLine(string2)
+                str2 = ""
+            End If
+
+        Next
+        Console.WriteLine(string2)
+        Console.ReadKey()
+
+
+    End Sub
+
+End Module
